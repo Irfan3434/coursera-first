@@ -1,0 +1,137 @@
+h1 {
+    text-align: center;
+    font-family: cursive;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+div.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    height: auto;
+}
+
+/* This is chicken block*/
+
+div.chicken {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 2px solid black;
+    flex: 0 0 30vw;
+    height: auto;
+    background-color: gray;
+    margin-top: 29px;
+    
+}
+
+div.chicken>h2 {
+    border: 2px solid black;
+    margin-top: 0px;
+    font-family: cursive;
+    font-size: 19px;
+    padding: 3px 28px 3.5px 28px;
+    box-sizing: border-box;
+    align-self: flex-end;
+    border-top: none;
+    border-right: none;
+    margin-bottom: 0px;
+    color: black;
+    background-color: rgba(206, 99, 117, 0.884);
+}
+
+div.chicken>p {
+   
+    padding: 0px 10px 5px 10px;
+    font-family: cursive;
+    margin-top: 5px;
+}
+
+/*This is beef block*/
+
+div.beef {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    flex: 0 0 28vw;
+    height: auto;
+    background-color: gray;
+    margin-top: 29px;
+    
+}
+
+div.beef>h2 {
+    border: 2px solid black;
+    margin-top: 0px;
+    font-family: cursive;
+    font-size: 19px;
+    padding: 3px 40px 3.5px 40px;
+    box-sizing: border-box;
+    align-self: flex-end;
+    border-top: none;
+    border-right: none;
+    margin-bottom: 0px;
+    color: white;
+    background-color: rgb(138, 36, 53);
+}
+
+div.beef>p {
+    padding: 0px 10px 5px 10px;
+    font-family: cursive;
+    margin-top: 0px;
+}
+
+/*This is sushi block*/
+
+div.sushi {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    flex: 0 0 28vw;
+    height: auto;
+    background-color: gray;
+    margin-top: 29px;
+ 
+}
+
+div.sushi>h2 {
+    border: 2px solid black;
+    margin-top: 0px;
+    font-family: cursive;
+    font-size: 19px;
+    padding: 3px 35px 3.5px 35px;
+    box-sizing: border-box;
+    align-self: flex-end;
+    border-top: none;
+    border-right: none;
+    margin-bottom: 0px;
+    color: black;
+    background-color: rgb(224, 198, 119);
+}
+
+div.sushi>p {
+    box-sizing: border-box;
+    padding: 0px 10px 5px 10px;
+    font-family: cursive;
+    margin-top: 0px;
+}
+
+
+@media (min-width: 768px) and (max-width:991px)
+
+{ 
+    #menu { display:flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap;}
+
+    chicken { flex: 0 0 29vw;}
+    #beef { flex: 0 0 29vw;}
+    #sushi { flex-basis: 74%; height: auto; }
+}
+
+@media ( max-width: 767px) {
+    #menu { display: flex; flex-direction: column; flex-wrap: nowrap; align-items: center; flex-shrink: 0;}
+    #chicken { flex: 0 0 29vw}
+    #beef { flex: 0 0 29vw} 
+    #sushi { flex: 0 0 29vw}
+
+}
